@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Gemini</title>
+  <link rel="stylesheet" href="./css/output.css">
+
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+  <div class="w-full max-w-md flex flex-col bg-gray-800 rounded-2xl shadow-lg h-[90vh]">
+    <!-- Header -->
+    <div class="flex items-center gap-2 p-4 border-b border-gray-700">
+      <div class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full font-bold">A</div>
+      <div>
+        <p class="font-semibold">Asisten AI</p>
+        <p class="text-sm text-green-400">Online</p>
+      </div>
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chat-box" class="flex-1 overflow-y-auto p-4 space-y-2"></div>
+
+    <!-- Input -->
+    <form id="chat-form" class="flex p-3 border-t border-gray-700">
+      <input id="user-input" type="text" placeholder="Kirim sebuah pesan..."
+        class="flex-1 px-4 py-2 rounded-full bg-gray-700 text-white focus:outline-none" />
+      <button type="submit" class="ml-2 bg-purple-600 hover:bg-purple-700 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M14.752 11.168l-9.193-5.278A1 1 0 004 6.723v10.554a1 1 0 001.559.832l9.193-5.278a1 1 0 000-1.664z" />
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
