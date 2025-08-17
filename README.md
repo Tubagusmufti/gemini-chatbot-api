@@ -49,4 +49,4 @@ npm install tailwindcss @tailwindcss/cli
 css/input.css:
 @import "tailwindcss";
 
-npx tailwindcss -i ./src/input.css -o ./style.css --watch
+npx tailwindcss -i ./css/input.css -o ./css/output.css --watch
