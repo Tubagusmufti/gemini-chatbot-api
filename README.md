@@ -46,7 +46,7 @@ cd ../frontend
 npm install
 npm install tailwindcss @tailwindcss/cli
 
-src/input.css:
+css/input.css:
 @import "tailwindcss";
 
 npx tailwindcss -i ./src/input.css -o ./style.css --watch
